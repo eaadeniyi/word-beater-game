@@ -16,41 +16,41 @@ function inputGame(){
        input.value="";
 
         const wordArray =[
-            "fallow",
+            "january",
             "pretty",
             "locket",
             "brother",
-            "spray",
+            "byzantine",
             "supreme",
             "support",
             "realize",
             "descriptive",
             "contain",
-            "rake",
-            "plant",
-            "knot",
-            "idea",
-            "sigh",
+            "resounding",
+            "periscope",
+            "debauchery",
+            "acclimatize",
+            "furniture",
             "nappy",
-            "cover",
-            "pest",
-            "boy",
-            "cart",
-            "four",
-            "letters",
+            "schmuck",
+            "divestment",
+            "camouflage",
+            "achilles",
+            "choreography",
+            "laudanum",
             "progressive",
             "consider",
             "appreciate",
             "punishment",
             "homeless",
-            "equal",
-            "dime",
+            "imbroglio",
+            "centennial",
             "axiomatic",
         ];
 
         const randomNumber = Math.floor(Math.random()* wordArray.length);
         const randomArray = wordArray[randomNumber];
-        randomWord.innerHTML =randomArray;
+        randomWord.innerHTML = randomArray;
         randomWord.style.color = "green";
    
         //countdown  
@@ -92,5 +92,8 @@ function inputGame(){
     }) ; 
 }
 inputGame();
+
+//cancelling copying of the randomword
+
 
 //document.getElementById("wordInput").disabled = true;

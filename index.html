@@ -10,15 +10,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="unsemantic-grid-responsive-tablet.css">
 </head>
-<body>
-    <form class="input-section">
-        <input type="text" placeholder="Enter the Word" class="wordInput">
-        <button class="replay">Replay</button>
-        <button class="generate">Generate</button>
-        <h4 class="countdown"></h4>
-        <h2 class="randomWord"></h2>
-    </form>
+<body class="grid-container">
+    <section class="prefix-5 grid-90">
+        <section class="gameRule">
+            <h3>Instructions:</h3>
+            <ul>
+                <li> You are to click on the Generate Button to get a random word displayed.</li>
+                <li> Type in the word within 5 seconds.</li>
+                <li> Press the Replay button to clear your former input and Generate another word.</li>
+                <li> I hope you get to enjoy this little project as I did.</li>
+            </ul>
+        </section>
+        
+        <form class="input-section">
+            <input type="text" placeholder="Enter the Generated Word..." class="wordInput">
+            <button class="replay">Replay</button>
+            <button class="generate">Generate</button>
+            <h4 class="countdown"></h4>
+            <h2 class="randomWord" onselectstart="return false" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false"></h2>
+        </form>
+    </section>
+    
 
 
     <script src="script.js"></script>
